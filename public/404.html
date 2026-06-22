@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashwin Stream</title>
+  </head>
+  <body>
+    <script>
+      // GitHub Pages serves this file for unknown paths. Preserve the requested
+      // SPA route, then bounce to index so the client router can render it.
+      (function () {
+        var redirect = window.location.pathname + window.location.search + window.location.hash;
+        sessionStorage.setItem("gh-pages-spa-redirect", redirect);
+        window.location.replace("/");
+      })();
+    </script>
+  </body>
+</html>
